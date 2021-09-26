@@ -1,0 +1,38 @@
+/*
+What will be the output of the following pseudocode?
+Integer a,b;
+Set a = 125, b = 122;
+if( (a + b) MOD 2 NOT EQUALS O )
+while ( a > 0)
+b = a + b;//b= 247+25+5 +1  
+a = a / 5 ;//0 
+End ;
+while
+              Print b;
+else
+              a = a - b ;
+              a = a / 2;
+              Print a ;
+end if;
+*/
+#include <stdio.h>
+int main()
+{
+    int a = 125, b = 122;
+    if( (a + b) % 2 != 0 )
+    {
+        while ( a > 0)
+        {
+            b = a + b; 
+            a = a / 5 ;
+        }
+        printf("%d",b);
+    }
+    else
+    {
+        a = a - b ;
+        a = a / 2;
+        printf("%d",a);
+    }
+    return 0;
+}
