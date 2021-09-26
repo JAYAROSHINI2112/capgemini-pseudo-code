@@ -1,0 +1,23 @@
+/*What will be the output of the following pseudocode for a given array a[5]=3,4,6,1,2 and pos=2?
+1.declare I,j,n,pos
+2.Repeat for j=pos to n-1
+3.       Set a[j]=a[j+1]
+4.End for loop
+5.n=n-1;
+6.Display the new array
+7.End */
+
+// ans :  3 4 1 2  
+
+#include<stdio.h>
+int main()
+{
+    int a[5] = {3,4,6,1,2},pos=2,i,j,n=5;
+    for(j = pos; j < n-1; j ++)
+       a[j] = a[j+1];
+     
+     n = n - 1;
+     
+     for(j=0;j<n;j++)
+      printf("%d ",a[j]);
+}
