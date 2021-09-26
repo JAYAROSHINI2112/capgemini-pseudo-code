@@ -1,0 +1,23 @@
+/*
+What will be the output of the following pseudocode for input 4?
+1.     Int sum(int num)
+2.     {
+3.     If(num is not equal to 0)
+4.             return num+num*sum(num-1)// 64
+5.     Else
+6.              return num
+7.     }
+*/
+#include <stdio.h>
+int sum(int num)
+{
+    if(num!=0)
+        return num+num*sum(num-1);
+    else 
+        return num;
+}
+int main()
+{
+    printf("%d",sum(5));
+}
+
