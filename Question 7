@@ -1,0 +1,29 @@
+/*
+What will be the output of the following pseudocode for the input x=22 and y=3?
+1. Start
+2.. Declare x, y, m, n
+3. Set m = x and n = y
+4. while m not equal to n then
+5. if m greater than n
+6.m = m - 1
+7. otherwise
+ 8.n = n - 1
+ 9. End if
+10. End while 1
+11. Print n
+*/
+#include<stdio.h>
+int main()
+{
+   int x=22, y=3, m, n;
+   m = x , n = y;
+   while(m!=n)
+   {
+       if(m>n)
+            m=m-1;
+        else
+            n=n-1;
+   }
+   printf("%d",n);
+}
+ans : 3
