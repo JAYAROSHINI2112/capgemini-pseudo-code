@@ -1,0 +1,29 @@
+/*
+What will be the output of the following pseudocode ?
+1.     Integer a,b,c
+2.     Set a=10,b=20
+3.     for(c=a;c<=b;c=c+2)
+4.            a=a+c//20
+5.             b=b-a+c//10
+6.              if(a   > 10)
+7.                         Print a
+8.              Else
+9.                         Print b
+10.           End if
+11.  End for
+*/
+#include <stdio.h>
+int main()
+{
+    int a=10,b=20,c;
+    for(c=a;c<=b;c=c+2)
+    {
+        a=a+c;
+        b=b-a+c;
+        if(a   > 10)
+            printf("%d ",a);
+        else 
+            printf("%d ",b);
+    }
+    return 0;
+}
