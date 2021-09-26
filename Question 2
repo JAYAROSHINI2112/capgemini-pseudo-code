@@ -1,0 +1,18 @@
+
+/*
+What will be the output of the following pesudocode?
+1.int a=1
+2.while (++a <=5)
+3.print a++ //2 4
+*/
+#include <stdio.h>
+int main()
+{
+    int a=1;
+    while(++a<=5)
+        printf("%d ",a++);
+    return 0;
+}
+
+output
+2 4
