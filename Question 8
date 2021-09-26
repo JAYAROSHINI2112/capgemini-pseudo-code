@@ -1,0 +1,35 @@
+
+/*
+What will be the output of the following pseudocode for x=11,y=5?
+1.fun(int x,int y)
+2.if(x==0)
+3.       return y
+4.else
+5.       return fun(x-1,x-y)
+
+11 5 
+10 6 
+9  4 
+8  5 
+7  3 
+6  4 
+5  2 
+4  3 
+3  1 
+2  2 
+1  0 
+0  1 
+*/
+#include <stdio.h>
+int fun(int x,int y)
+{
+    if(x==0)
+        return y;
+    else
+        return fun(x-1,x-y);
+}
+int main()
+{
+    printf("%d",fun(11,5));
+    return 0;
+}
