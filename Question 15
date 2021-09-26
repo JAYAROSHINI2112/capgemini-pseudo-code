@@ -1,0 +1,19 @@
+//What will be the output of the following pseudocode for input a = 8 and b = 9?
+ 
+#include <stdio.h>
+int function(int a, int b) 
+{
+    if(a < b) 
+        return function(b,a);
+    else if(b != 0)
+        return(a + function(a, b-1)); // 9+function(9,7)
+    else 
+        return 0;
+}
+int main()
+{
+    printf("%d",function(8,9));
+}
+
+op
+72
