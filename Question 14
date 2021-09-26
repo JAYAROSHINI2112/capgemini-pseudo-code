@@ -1,0 +1,16 @@
+What will be the output of the following pseudo code?
+Integer n, rev, rem, org
+Set n = 61206, rev = 0
+Set org = n 
+Repeat while n NOT EQUALS 0
+rem = n Mod 10 
+rev = rev * 10 + rem // n =0 rev = 60216
+n = n / 10 
+End while 
+If (org IS EQUAL TO rev) 
+Print rev 
+Else 
+Print (org - rev) / 6 // 61206 - 60216 =  990 / 6 = 165
+End If 
+
+ans : 165
