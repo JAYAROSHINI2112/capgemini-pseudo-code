@@ -1,0 +1,14 @@
+What will be the output of the following pseudocode?
+Integer a , b
+Set a = 2, b = 50
+while( b>0)
+a = b MOD 2 + a//a=4
+if ( a MOD 3 IS EQUAL TO 0)
+Print (a);
+else
+print(b-1)
+b = b / 5;//0
+a = a + 1//5
+end while;
+
+ans : 49 3 1
