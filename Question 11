@@ -1,0 +1,14 @@
+What will be the output of the following pseudocode?
+1.     Int a=15,b=45,c=9,i
+2.     If((c>(a+b))OR a<(5*c))
+3.           for(i=1 to 3)
+4.                     c=c*2
+5.          End for loop
+6.     Else
+7.          While(a>6)
+8.                   b=b+1
+9.                  a=a-4
+10.        End while loop
+11.  Print b,c
+
+ans : 45 72 
