@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int a=6,b=9,n,res=1;
+    if(a > 10 && b < a)
+     printf("Error");
+    else
+      {
+          for(n=a;n<b;n++)
+          {
+              res=res*n;
+          }
+          printf("%d",res);
+      }
+    
+}
