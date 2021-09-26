@@ -1,0 +1,29 @@
+/*
+What will be the output of the following pseudocode?
+1. char str[10] = "India", ch = 'n';
+2. int ind[10], loop, j = 0 ;
+3. for( loop = 0; str[loop] != '\0'; loop=loop+1)
+4.       if ( str[loop] == ch );
+5. int d[j++] = loop ;
+6. for( loop = 0; loop <j; loop=loop+1);
+7. Print ind[loop];
+
+ans : 1
+*/
+#include <stdio.h>
+int main()
+{
+    char str[] = "Indian", ch = 'n';
+    int ind[10], loop, j = 0 ;
+    for( loop = 0; str[loop] != '\0'; loop=loop+1)
+    {
+        if ( str[loop] == ch )
+            ind[j++] = loop ;
+    }
+    for( loop = 0; loop <j; loop=loop+1)
+        printf("%d ",ind[loop]);
+    
+    return 0;
+}
+Ans 
+1 5
