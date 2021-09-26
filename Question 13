@@ -1,0 +1,11 @@
+What will be the output of the following pesudocode?
+1. Integer i=0
+2. i=i+12
+3. print i
+4. if(i<60)
+5.       goto line number 2
+6. Else
+7.        Print i+1
+8. End if
+
+ans :12 24 36 48 60 61
